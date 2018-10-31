@@ -7,5 +7,8 @@
     "start": "node webrtc_signal_server.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "websocket": "^1.0.28"
+  }
 }
