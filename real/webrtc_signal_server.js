@@ -32,7 +32,7 @@ var fs = require("fs");
 var websocket = require("websocket").server;
 
 // general variables
-var port = process.env.PORT;
+var port = process.env.PORT || 1234;
 var webrtc_clients = [];
 var webrtc_discussions = {};
 
@@ -64,7 +64,7 @@ fs.readFile("video_call_with_chat.html", function(error, data) {
   }
 });
 
-// web socket functions
+// 웹소켓 
 var websocket_server = new websocket({
   httpServer: http_server
 });

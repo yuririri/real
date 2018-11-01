@@ -134,7 +134,7 @@ function start() {
   setup_video();
 
   // setup generic connection to the signaling server using the WebSocket API
-  signaling_server = new WebSocket("ws://localhost:1234");
+  signaling_server = new WebSocket("ws://172.18.201.199:1234");
 
   if (document.location.hash === "" || document.location.hash === undefined) { // you are the Caller
 
