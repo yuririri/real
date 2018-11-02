@@ -27,7 +27,7 @@
 */
 
 // useful libs
-var http = require("http");
+var http = require("https");
 var fs = require("fs");
 var websocket = require("websocket").server;
 
